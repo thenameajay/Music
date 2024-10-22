@@ -55,9 +55,8 @@ exports.uploadSong=(req, res)=>{
 
 exports.getAudio = (req, res) => {
     //get
-    const {searched_song} = req.body;
+    const {searched_song} = req.query;
     // const searched_song = req.query.body;
-    console.log(JSON.stringify(req.params));
     const filePath = path.join(__dirname, `../songs/${searched_song}`); // ENTER YOUR DESIRED SONGNAME  HERE
     fs.readFile(filePath, (err, data) => {
         if (err) {

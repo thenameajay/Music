@@ -1,0 +1,13 @@
+#music{
+    background-color: red;
+    height: 10%;
+    width: 90%;
+    color: blue;
+}
+.song-div{
+    height: 5%;
+    margin-bottom: 2px;
+    border: 1px solid purple;
+    width: 50%;
+    background-color: blue;
+}

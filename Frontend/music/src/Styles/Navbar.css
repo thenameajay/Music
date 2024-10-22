@@ -1,0 +1,19 @@
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 10%;
+    width: 100%;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    
+    width: 80%;
+    justify-content: space-evenly;
+}
+#navbar ul li{
+    list-style: none;
+}
