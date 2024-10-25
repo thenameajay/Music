@@ -1,8 +1,10 @@
+import "../Styles/ContactNAbout.css"
+
 function AboutUs(){
     return(
-        <>
-            its about
-        </>
+        <div id="about-div">
+            it is aoout us...
+        </div>
     )
 }
 export default AboutUs

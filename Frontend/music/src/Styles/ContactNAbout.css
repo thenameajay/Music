@@ -1,0 +1,23 @@
+#contact-div{
+    height:50%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-btn{
+    height: 10%;
+    width: 60%;
+    color: white;
+    background-color: #0b2143d1;
+    margin: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none;
+}
+#about-div{
+    height:80%;
+    width:80%;
+    display:flex;
+}

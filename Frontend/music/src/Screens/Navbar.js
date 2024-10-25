@@ -3,12 +3,16 @@ import { useNavigate } from "react-router-dom"
 
 function Navbar(){
     const navigate = useNavigate()
+    function isActive(path){
+        return window.location.href.includes(path)
+    }
     return(
         <div id="navbar">
             <ul>
-                <li><a onClick={()=>navigate('/')}>Home</a></li>
-                <li><a onClick={()=>navigate('/about')}>About Us</a></li>
-                <li><a onClick={()=>navigate('/')}>Contact</a></li>
+                <li class={`navlink${isActive('/home')?'active':''}`}><a onClick={()=>navigate('/home')}>Home</a></li>
+                <li class={`navlink${isActive('/about')?'active':''}`}><a onClick={()=>navigate('/about')}>About</a></li>
+                <li class={`navlink${isActive('/contact')?'active':''}`}><a onClick={()=>navigate('/contact')}>Contact</a></li>
+                <li class={`navlink${isActive('/addsong')?'active':''}`}><a onClick={()=>navigate('/addsong')}>Add</a></li>
             </ul>
         </div>
     )

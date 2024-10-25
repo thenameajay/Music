@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: black;
+    background-color: #091f41b5;
     color: white;
     height: 10%;
     width: 100%;
@@ -10,10 +10,31 @@
 #navbar ul{
     display: flex;
     flex-direction: row;
-    
+    font-family: cursive;
+    font-variant: petite-caps;
     width: 80%;
     justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
 }
 #navbar ul li{
+    padding:0px 10px;
     list-style: none;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li:hover{
+    cursor:pointer;
+}
+
+.navlinkactive{
+    background-color:#00000061;
+}
+
+@media screen and (max-width:380px){
+    #navbar ul li{
+        font-size:smaller;
+        padding:0px 3px;
+        font-weight:bold;
+    }
 }

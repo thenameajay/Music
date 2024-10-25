@@ -1,0 +1,30 @@
+#add-song-div{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#file-input{
+    height: 10%;
+    /* width: 10%; */
+    margin: 5px;
+}
+#upload-btn{
+    height: 10%;
+    width: 10%;
+    color: white;
+    background-color: #071b3ba1;
+    margin: 5px;
+}
+
+@media screen and (max-width:380px){
+    #upload-btn{
+        width:70%;
+    }
+    #file-input{
+        width:auto;
+    }
+}
