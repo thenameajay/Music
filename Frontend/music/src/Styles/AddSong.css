@@ -7,24 +7,38 @@
     color: white;
 }
 
-#file-input{
-    height: 10%;
-    /* width: 10%; */
-    margin: 5px;
+#add-song-div p{
+    /* display: none; */
+    box-shadow: 0px 0px 7px 6px #0a0a09c7;
+    background-color: #0a0a09c7;
 }
-#upload-btn{
+
+#admin-password{
+    background-color: #071b3bb8;
+    padding: 3px;
+    border-radius: 8px;
+    color: white;
+}
+
+.btns{
     height: 10%;
     width: 10%;
     color: white;
     background-color: #071b3ba1;
     margin: 5px;
+    min-width: 80px;
+}
+.btns:hover{
+    cursor: pointer;
+    background-color: #06142aa1;
 }
 
 @media screen and (max-width:380px){
-    #upload-btn{
-        width:70%;
-    }
-    #file-input{
-        width:auto;
+    #add-song-div p {
+        font-size: xx-small;
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
     }
 }

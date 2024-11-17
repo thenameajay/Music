@@ -11,10 +11,27 @@
     height: 90%;
     width: 100%;
 }
+#search-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10%;
+    width: 65%;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+#search-div button{
+    font-size: large;
+    height: 100%;
+    width: 50%;
+    background-color: #ffebcd12;
+    color: white;
+}
 #search-bar{
     margin-top: 5px;
-    height: 7%;
-    width: 60%;
+    margin-bottom: 3px;
+    height: 100%;
+    width: 80%;
     border-radius: 15px;
     font-size: medium;
     font-family: cursive;
@@ -33,10 +50,27 @@
     width: 80%;
     overflow-y: scroll;
 }
+
+.setting-div{
+    /* border: 1px solid white; */
+    border-radius: 3px;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: #790dcf00;
+    padding: 0px 5px;
+}
+.setting-div:hover{
+    background-color: #0d081099;
+    cursor: pointer;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
 .song-name-div{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width:90%;
 }
 .current-song-div{
     box-shadow: 0px 0px 20px 4px #3e3791;
@@ -44,13 +78,17 @@
     color: white;
     display:flex;
     justify-content: space-between;
+    font-variant: small-caps;
     height: auto;
     padding: 2% 3%;
     font-size: large;
-    margin-bottom: 2px;
     border: 1px solid #f9f7f9;
     border-radius: 5px;
-    width: 50%;
+    width: 65%;
+    margin-bottom: 5px;
+}
+.current-song-div:hover{
+    cursor: pointer;
 }
 .song-div{
     box-shadow: 0px 0px 20px 4px #3e3791;
@@ -61,12 +99,12 @@
     height: auto;
     padding: 2% 3%;
     font-size: large;
-    margin-bottom: 5px;
     border: 1px solid #d9c7d9fc;
     border-radius: 5px;
-    width: 50%;
+    width: 60%;
     font-variant: small-caps;
     background-color: #111131a3;
+    margin-bottom: 5px;
     /* background-color: blue; */
 
 }
@@ -138,22 +176,39 @@
 
 @media screen and (max-width:380px){
     #search-bar{
-        height: 5%;
         width: 75%;
         font-size:medium;
+    }
+    
+    #search-div{
+        /* flex-direction: column; */
+        /* height: 5%; */
+        width: 90%;
     }
 
     #song-controls{
         font-size:large;
     }
 
+    #all-song-div{
+        width: 90%;
+    }
+
     #song-name{
         font-size:small;
     }
 
-    .song-div, .current-song-div{
+    .song-div{
         padding: 4% 3%;
         width : 90%;
         font-size: medium;
+    }
+    .current-song-div{
+        padding: 4% 3%;
+        width : 92%;
+        font-size: medium;
+    }
+    .outer-song-div{
+        width: 90%;
     }
 }

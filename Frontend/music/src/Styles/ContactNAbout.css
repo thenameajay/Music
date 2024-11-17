@@ -6,8 +6,9 @@
     align-items: center;
 }
 .contact-btn{
+    border: 1px solid darkgray;
     height: 10%;
-    width: 60%;
+    width: 30%;
     color: white;
     background-color: #0b2143d1;
     margin: 5px;
@@ -15,9 +16,32 @@
     align-items: center;
     justify-content: center;
     text-decoration:none;
+    min-width: 115px;
 }
+.contact-btn:hover{
+    cursor: pointer;
+    background-color: #050e1da1;
+}
+
 #about-div{
-    height:80%;
-    width:80%;
+    background-color: #000000ad;
+    overflow-y: scroll;
+    height:90%;
+    align-self: center;
     display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#about-div h2{
+    margin-bottom: 0px;
+}
+#about-div p{
+    text-align: justify;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+@media screen and (max-width:380px){
+  
 }
