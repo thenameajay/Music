@@ -10,7 +10,7 @@ function AddSong(){
     const fileInputRef=useRef(null)
 
     function authorizeAdmin(){
-        if(document.getElementById("admin-password").value==="i am admin here"){
+        if(document.getElementById("admin-password").value===process.env.REACT_APP_UPLOAD_PASSWORD){
             setIsAdmin(true)
         }
         document.getElementById("admin-password").value=""
