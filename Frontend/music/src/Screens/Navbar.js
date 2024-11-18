@@ -11,7 +11,7 @@ function Navbar(){
         <div id="navbar">
             <div id="brand-name-div" onClick={()=>navigate('/about')}>
                 <img src={logo} alt="logo" />
-                Fly Away
+                Music Senpai
             </div>
             <ul>
                 <li class={`navlink${isActive('/home')?'active':''}`}><a onClick={()=>navigate('/home')}>Home</a></li>

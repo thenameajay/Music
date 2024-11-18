@@ -8,24 +8,29 @@
     width: 100%;
 }
 #brand-name-div{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
     cursor: pointer;
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: math;
+    font-family: cursive;
     font-size: large;
 }
 #brand-name-div img{
-    width: 50%;
+    width: 40%;
     height: 80%;
     padding: 0px 5px;
 }
 #navbar ul{
     display: flex;
     flex-direction: row;
-    font-family: cursive;
+    font-family: serif;
     font-variant: petite-caps;
+    font-size: large;
+    font-weight: 400;
     width: 40%;
     justify-content: space-evenly;
     margin: 0px;
@@ -50,7 +55,7 @@
        width: 60%;
     }
     #brand-name-div{
-        width: 30%;
+        width: 40%;
     }
     #brand-name-div img{
         width: 40%;
@@ -65,6 +70,7 @@
     }
     #navbar ul{
         width: 80%;
+        height: 100%;
     }
     #navbar ul li{
         font-size:smaller;
@@ -72,7 +78,8 @@
         font-weight:bold;
     }
     #brand-name-div{
-        width: 50%;
+        justify-content: space-evenly;
+        width: 70%;
         height: 50%;
         font-size: medium;
     }
