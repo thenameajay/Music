@@ -1,4 +1,3 @@
-import { upload } from "@testing-library/user-event/dist/upload"
 import "../Styles/AddSong.css"
 import {useRef, useState} from "react"
 
@@ -38,7 +37,7 @@ function AddSong(){
         formData.append('file', selectedFile)
 
         try {
-            const response = await fetch("http://localhost:8123/upload",{
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/upload`,{
                 method:'POST',
                 body:formData
             })

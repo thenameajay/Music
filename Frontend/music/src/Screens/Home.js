@@ -71,7 +71,7 @@ function Home() {
     }, [songUrl])
 
     async function getSongs() {
-        let data_list = await fetch("http://localhost:8123/songlist")
+        let data_list = await fetch(`${process.env.REACT_APP_BACKEND_URL}/songlist`)
         data_list = await data_list.json()
         console.log("song list is : " + data_list)
         return data_list
