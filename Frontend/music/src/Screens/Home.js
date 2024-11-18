@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react"
 import "../Styles/Home.css"
-import { json } from "react-router-dom"
 
 function Home() {
     const audref = useRef(null)
@@ -58,7 +57,7 @@ function Home() {
 
     useEffect(() => {
         if (currentSong) {
-            fetch(`http://localhost:8123/getaudio?searched_song=${currentSong}`).then((res) => res.blob()).then((blob) => {
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/getaudio?searched_song=${currentSong}`).then((res) => res.blob()).then((blob) => {
                 const url = URL.createObjectURL(blob)
                 setSongUrl(url)
             }).then(() => {
