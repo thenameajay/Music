@@ -33,7 +33,7 @@
     background-color: #06142aa1;
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:468px){
     #add-song-div p {
         font-size: xx-small;
         text-wrap: nowrap;
