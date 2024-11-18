@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react"
 import "../Styles/Home.css"
+import { json } from "react-router-dom"
 
 function Home() {
     const audref = useRef(null)
+    const countref = useRef(0)
     // const audio = audref.current // changed
     const [songDuration, setDuration] = useState(null)
     const [searchedTerm, setSearchedTerm] = useState('')
@@ -17,7 +19,20 @@ function Home() {
     const [playlist, setPlaylist] = useState([])
     const [tempList, setTempList] = useState(null)
 
+    useEffect(()=>{
+        countref.current=countref.current+1
+        console.log("following is local storec :" + countref)
+        console.log(localStorage.getItem("storedPlaylist"))
+        if(countref.current>2){
+            localStorage.setItem("storedPlaylist", JSON.stringify(playlist))
+        }
+        // localStorage.removeItem("storedPlaylist")
+    },[playlist])
+
     useEffect(() => {
+        if(localStorage.getItem("storedPlaylist")){
+            setPlaylist(JSON.parse(localStorage.getItem("storedPlaylist")))
+        }
         getSongs().then((res) => setSongList(res))
     }, [])
 

@@ -1,18 +1,32 @@
 #navbar{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #091f41b5;
     color: white;
     height: 10%;
     width: 100%;
+}
+#brand-name-div{
+    cursor: pointer;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: math;
+    font-size: large;
+}
+#brand-name-div img{
+    width: 50%;
+    height: 80%;
+    padding: 0px 5px;
 }
 #navbar ul{
     display: flex;
     flex-direction: row;
     font-family: cursive;
     font-variant: petite-caps;
-    width: 80%;
+    width: 40%;
     justify-content: space-evenly;
     margin: 0px;
     padding: 0px;
@@ -31,10 +45,40 @@
     background-color:#00000061;
 }
 
+@media screen and (max-width:670px){
+    #navbar ul{
+       width: 60%;
+    }
+    #brand-name-div{
+        width: 30%;
+    }
+    #brand-name-div img{
+        width: 40%;
+    }
+   }
+
 @media screen and (max-width:380px){
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #navbar ul{
+        width: 80%;
+    }
     #navbar ul li{
         font-size:smaller;
         padding:0px 3px;
         font-weight:bold;
     }
+    #brand-name-div{
+        width: 50%;
+        height: 50%;
+        font-size: medium;
+    }
+    #brand-name-div img{
+        width: 30%;
+        height: 80%;
+    }
 }
+
